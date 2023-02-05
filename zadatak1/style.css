@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.board {
+    margin-top: 100px;
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.field {
+    font-size: 50px;
+    text-align: center;
+    line-height: 97px;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    user-select: none;
+}
+
+.field:nth-child(3n){
+    border-right: none;
+}
+
+.field:nth-child(n+7){
+    border-bottom: none;
+}
+
+.winner-text{
+    font-size: 20px;
+    padding-top: 40px;
+}
+
+.winner-highlight {
+    background-color: aqua;
+}
