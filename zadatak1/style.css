@@ -37,11 +37,17 @@ body{
     border-bottom: none;
 }
 
-.winner-text{
+button{
+    margin-top: 50px;
+    width: 20vh;
+    height: 10vh;
+}
+
+/* .winner-text{
     font-size: 20px;
     padding-top: 40px;
 }
 
 .winner-highlight {
     background-color: aqua;
-}
+} */

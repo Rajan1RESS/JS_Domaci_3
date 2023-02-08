@@ -34,11 +34,18 @@ function GameCheck(){
         }
 
         if(check){
-            alert(player + " je pobijedio");
-            reset();
-        }
-
-    
+            setTimeout(() => {
+                if(player == "X")
+                    player = "O";
+                else if(player == "O")
+                    player = "X";   
+                alert(player + " je pobijedio");    
+            }, 1000);
+                           
+            setTimeout(() => {
+                reset();    
+            }, 1000);
+        }    
     })
 }
 
@@ -59,11 +66,17 @@ fields.forEach(element => {
     element.addEventListener('click', () =>{
         if(element.innerText.trim() != "") return;
         element.innerText = player;
-       
-        GameCheck();  
+        GameCheck(element);    
         if(player == "X")
             player = "O";
         else if(player == "O")
             player = "X";    
-    })
+     })
 })
+
+
+const dugme_za_povratak = document.querySelector("#pocetna_str");
+
+dugme_za_povratak.addEventListener("click", () => {
+    location.href = "/main.html";
+});
