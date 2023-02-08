@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#board{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.box-element{
+    border: 2px solid black;
+    margin: 2px;
+    font-size: 2.5rem;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
