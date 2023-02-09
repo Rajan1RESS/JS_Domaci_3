@@ -60,6 +60,10 @@ function one_pair_setter(skup){
 
 
 function checkLetters(){
+    let t = document.querySelector(".final-text");
+    if(t!==null)
+        t.remove();
+
     let allBoxes = document.querySelectorAll(".value-box");
     let allValues = [];
     let word = "";
@@ -73,12 +77,14 @@ function checkLetters(){
     if(isPalindrom(word)===true){
         let board = document.getElementById("board");
         let tekst = document.createElement('p');
+        tekst.classList.add("final-text");
         tekst.textContent = "Palindrom";
         board.after(tekst);
     }
     else{
         let board = document.getElementById("board");
         let tekst = document.createElement('p');
+        tekst.classList.add("final-text");
         tekst.textContent = "Nije palindrom";
         board.after(tekst);
     }
