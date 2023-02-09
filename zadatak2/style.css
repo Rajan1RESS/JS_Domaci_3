@@ -4,10 +4,23 @@
     box-sizing: border-box;
 }
 
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.unos-tekst h2{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 #board{
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .box-element{

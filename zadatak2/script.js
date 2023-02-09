@@ -6,6 +6,10 @@ function klik_dugmeta(){
 const sub_dugme = document.getElementById("sub_dugme");
 
 sub_dugme.addEventListener("click", () => {
+    let t = document.querySelector(".final-text");
+    if(t!==null)
+        t.remove();
+
     let board = document.getElementById("board");
     while(board.firstChild!=null){
         board.firstChild.remove();
@@ -116,3 +120,7 @@ provjera.addEventListener("click", () => {
     checkLetters();
 });
 
+const dugme_za_povratak = document.querySelector("#pocetna_str");
+dugme_za_povratak.addEventListener("click", () => {
+    location.href = "/main.html";
+});
