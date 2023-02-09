@@ -18,6 +18,12 @@
     width: 3rem;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    text-transform: uppercase;
+}
+
+.hidden-box-element{
+    margin: 2px;
+    height: 3rem;
+    width: 3rem;
 }
