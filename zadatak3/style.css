@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    flex-shrink: 0;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+body{
+    padding-top: 20vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 30vh;
+    width: 50vh;
+    position: relative;
+    margin: auto;
+}
+
+.slide{
+    display: none;
+}
+
+.prev, .next {
+    height: 3em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    size: 18px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

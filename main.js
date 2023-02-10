@@ -11,6 +11,6 @@ dugme2.addEventListener("click", () => {
 });
 
 dugme3.addEventListener("click", () => {
-    location.href = "/zadatak1/index.html";
+    location.href = "/zadatak3/index.html";
 })
 
