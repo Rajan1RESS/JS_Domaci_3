@@ -7,10 +7,10 @@ dugme1.addEventListener("click", () => {
 });
 
 dugme2.addEventListener("click", () => {
-    window.location = "/zadatak2/prvi.html";
+    window.location = "/zadatak2/drugi.html";
 });
 
 dugme3.addEventListener("click", () => {
-    location.href = "/zadatak3/prvi.html";
+    location.href = "/zadatak3/treci.html";
 })
 
