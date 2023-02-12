@@ -78,5 +78,5 @@ fields.forEach(element => {
 const dugme_za_povratak = document.querySelector("#pocetna_str");
 
 dugme_za_povratak.addEventListener("click", () => {
-    location.href = "/index.html";
+    location.href = "index.html";
 });
