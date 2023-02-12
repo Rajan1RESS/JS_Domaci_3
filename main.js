@@ -3,7 +3,7 @@ const dugme2 = document.querySelector("#zad2");
 const dugme3 = document.querySelector("#zad3");
 
 dugme1.addEventListener("click", () => {
-    window.location = "../zadatak1/prvi.html";
+    window.location = "prvi.html";
 });
 
 dugme2.addEventListener("click", () => {
