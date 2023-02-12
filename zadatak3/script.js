@@ -37,33 +37,46 @@ next.addEventListener("click", () => {
 })
 
 
-
-
 let rep;
 let token;
-const slika = document.querySelector(".container");
+let slika = document.querySelector(".container");
 slika.addEventListener("mouseover", ()=>{
     token = 1;
-    console.log("ee");
 })
 
 slika.addEventListener("mouseout",()=>{
     token = 0;
 })
 
-if(token === 1){
-    slika.addEventListener("keydown", ()=>{
-        if(event.keyCode == '37'){
-            console.log("a");
+window.addEventListener("keydown", (event)=>{
+    if(token===1){
+        if(event.keyCode === 37){
             ChangeSlide(-1);
         }
-        if(event.keyCode == '39'){
+        if(event.keyCode === 39){
             ChangeSlide(1);
         }
-    })
-}
+    }   
+})
 
-
+let klik_token = 1;
+let c = document.querySelectorAll(".slide")
+c.forEach(element => {
+    element.addEventListener("click",() => {  
+        if(klik_token === 1){
+            document.body.style.paddingTop = "0px";
+            slika.style.height = "90vh";
+            slika.style.width = "90vw";
+            klik_token = 0;
+        }
+        else if(klik_token === 0){
+            document.body.style.paddingTop = "20vh";
+            slika.style.height = "30vh";
+            slika.style.width = "30vw";
+            klik_token = 1;
+        }
+    });
+})
 
 
 const dugme_za_povratak = document.querySelector("#pocetna_str");
