@@ -122,5 +122,5 @@ provjera.addEventListener("click", () => {
 
 const dugme_za_povratak = document.querySelector("#pocetna_str");
 dugme_za_povratak.addEventListener("click", () => {
-    location.href = "/main.html";
+    location.href = "/index.html";
 });
