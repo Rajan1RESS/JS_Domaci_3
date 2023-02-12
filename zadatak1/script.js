@@ -40,7 +40,7 @@ function GameCheck(){
                 else if(player == "O")
                     player = "X";   
                 alert(player + " je pobijedio");    
-            }, 1000);
+            }, 100);
                            
             setTimeout(() => {
                 reset();    
